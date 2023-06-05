@@ -1,6 +1,6 @@
 %define libname %mklibname KF6Plotting
 %define devname %mklibname KF6Plotting -d
-%define git 20230527
+%define git 20230605
 
 Name: kf6-kplotting
 Version: 5.240.0
