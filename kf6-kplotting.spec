@@ -1,6 +1,6 @@
 %define libname %mklibname KF6Plotting
 %define devname %mklibname KF6Plotting -d
-%define git 20230927
+%define git 20231005
 
 Name: kf6-kplotting
 Version: 5.240.0
@@ -77,7 +77,6 @@ QWidget-derived class that provides a virtual base class for easy data-plotting
 %files -n %{devname}
 %{_includedir}/KF6/KPlotting
 %{_libdir}/cmake/KF6Plotting
-%{_qtdir}/mkspecs/modules/qt_KPlotting.pri
 %{_qtdir}/doc/KF6Plotting.*
 
 %files -n %{libname}
