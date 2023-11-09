@@ -1,11 +1,17 @@
+%define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
+
 %define libname %mklibname KF6Plotting
 %define devname %mklibname KF6Plotting -d
-%define git 20231103
+#define git 20231103
 
 Name: kf6-kplotting
-Version: 5.240.0
+Version: 5.245.0
 Release: %{?git:0.%{git}.}1
+%if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kplotting/-/archive/master/kplotting-master.tar.bz2#/kplotting-%{git}.tar.bz2
+%else
+Source0: http://download.kde.org/%{stable}/frameworks/%{version}/kplotting-%{version}.tar.xz
+%endif
 Summary: QWidget-derived class that provides a virtual base class for easy data-plotting
 URL: https://invent.kde.org/frameworks/kplotting
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
