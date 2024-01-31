@@ -5,7 +5,7 @@
 #define git 20231103
 
 Name: kf6-kplotting
-Version: 5.248.0
+Version: 5.249.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kplotting/-/archive/master/kplotting-master.tar.bz2#/kplotting-%{git}.tar.bz2
