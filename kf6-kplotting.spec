@@ -90,3 +90,6 @@ QWidget-derived class that provides a virtual base class for easy data-plotting
 
 %files -n %{libname}-designer
 %{_qtdir}/plugins/designer/kplotting6widgets.so
+
+# keep %mklibname visible for rpmlint SpecCheck (checks last line only)
+# %mklibname
